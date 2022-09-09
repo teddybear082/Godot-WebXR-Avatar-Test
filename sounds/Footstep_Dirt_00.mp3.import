@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Footstep_Dirt_00.mp3-d5d864fa147b94d23d9e16dbae7f7ccd.mp3str"
+
+[deps]
+
+source_file="res://sounds/Footstep_Dirt_00.mp3"
+dest_files=[ "res://.import/Footstep_Dirt_00.mp3-d5d864fa147b94d23d9e16dbae7f7ccd.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
