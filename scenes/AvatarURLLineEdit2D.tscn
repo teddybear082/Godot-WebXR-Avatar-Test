@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://fonts/LineEditFont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://scenes/AvatarURLLineEdit2D.gd" type="Script" id=2]
+
+[node name="AvatarURLLineEdit2D" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="LineEdit" type="LineEdit" parent="."]
+margin_right = 601.0
+margin_bottom = 202.0
+custom_colors/cursor_color = Color( 0.792157, 0.572549, 0.109804, 1 )
+custom_colors/font_color = Color( 0.792157, 0.572549, 0.109804, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "https://d1a370nemizbjq.cloudfront.net/76e41690-fe83-4619-a955-8c133324592d.glb"
+
+[connection signal="text_entered" from="LineEdit" to="." method="_on_LineEdit_text_entered"]
