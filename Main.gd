@@ -138,7 +138,8 @@ func _webxr_on_select(controller_id: int) -> void:
 	var controller: ARVRPositionalTracker = webxr_interface.get_controller(controller_id)
 	print (controller.get_orientation())
 	print (controller.get_position())
-	controller.gamepad.hapticActuators[0].pulse(1.0, 300)
+	
+	
 func _webxr_on_select_start(controller_id: int) -> void:
 	print("Select Start: " + str(controller_id))
  
@@ -147,7 +148,6 @@ func _webxr_on_select_end(controller_id: int) -> void:
  
 func _webxr_on_squeeze(controller_id: int) -> void:
 	print("Squeeze: " + str(controller_id))
-	webxr_interface.get_controller(controller_id).gamepad.hapticActuators[0].pulse(1.0, 300)
 	webxr_interface.get_input_sources() 
  
 func _webxr_on_squeeze_start(controller_id: int) -> void:
